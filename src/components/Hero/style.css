@@ -1,0 +1,18 @@
+
+.hero {
+  position: relative;
+  height: 400px;
+  background-image: linear-gradient(to right, #FFC5F6ff, #FEB1CCff, #FD9EA5ff, #FF9C55, #FF5555);
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.hero h1, .hero h2 {
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  padding-top: 140px;
+  margin-top: 0;
+}
+

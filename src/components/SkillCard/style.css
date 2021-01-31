@@ -1,0 +1,119 @@
+:root {
+	--primary: #192824 !important;
+	--cottoncandy: #ffc5f6ff !important;
+	--background: #192824 !important;
+	--nadeshikopink: #feb1ccff !important;
+	--salmonpink: #fd9ea5ff !important;
+	--sandybrown: #ff9c55 !important;
+	--tartorange: #ff5555 !important;
+}
+
+.thumbnails {
+  font-size: 50px;
+}
+.thumbnailstext {
+	font-size: inherit;
+}
+.thumbnails .thumbnail {
+	display: inline-block;
+	margin: 0 20px;
+}
+.thumbnailstext .thumbnail {
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.card h2 {
+	font-family: "Rubik Mono One", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.card p,
+.card a {
+	font-size: 25px;
+	text-align: center;
+	font-weight: normal;
+	color: white;
+}
+.card p,
+.card a:hover {
+	background-color: unset !important;
+	color: unset !important;
+	text-decoration: none;
+}
+
+.card {
+	position: fixed;
+	display: flex;
+	background-color: var(--background) !important;
+	width: max-content;
+	align-items: center;
+	min-height: 200px;
+	cursor: pointer;
+	padding: 20px;
+	margin: auto;
+	border: 3px solid var(--primary);
+	box-shadow: 10px -10px 0 -3px var(--background),
+		10px -10px var(--nadeshikopink), 20px -20px 0 -3px var(--background),
+		20px -20px var(--salmonpink), 30px -30px 0 -3px var(--background),
+		30px -30px var(--sandybrown), 40px -40px 0 -3px var(--background),
+		40px -40px var(--tartorange);
+}
+
+.card:hover {
+  animation: shadow-wave 1s ease infinite;
+}
+
+@keyframes shadow-wave {
+	0% {
+		border: 3px solid var(--primary);
+		box-shadow: 10px -10px 0 -3px var(--background),
+			10px -10px var(--nadeshikopink), 20px -20px 0 -3px var(--background),
+			20px -20px var(--salmonpink), 30px -30px 0 -3px var(--background),
+			30px -30px var(--sandybrown), 40px -40px 0 -3px var(--background),
+			40px -40px var(--tartorange);
+	}
+	20% {
+		border: 3px solid var(--tartorange);
+		box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary),
+			20px -20px 0 -3px var(--background), 20px -20px var(--nadeshikopink),
+			30px -30px 0 -3px var(--background), 30px -30px var(--salmonpink),
+			40px -40px 0 -3px var(--background), 40px -40px var(--sandybrown);
+	}
+	40% {
+		border: 3px solid var(--sandybrown);
+		box-shadow: 10px -10px 0 -3px var(--background),
+			10px -10px var(--tartorange), 20px -20px 0 -3px var(--background),
+			20px -20px var(--primary), 30px -30px 0 -3px var(--background),
+			30px -30px var(--nadeshikopink), 40px -40px 0 -3px var(--background),
+			40px -40px var(--salmonpink);
+	}
+	60% {
+		border: 3px solid var(--salmonpink);
+		box-shadow: 10px -10px 0 -3px var(--background),
+			10px -10px var(--sandybrown), 20px -20px 0 -3px var(--background),
+			20px -20px var(--tartorange), 30px -30px 0 -3px var(--background),
+			30px -30px var(--primary), 40px -40px 0 -3px var(--background),
+			40px -40px var(--nadeshikopink);
+	}
+	80% {
+		border: 3px solid var(--nadeshikopink);
+		box-shadow: 10px -10px 0 -3px var(--background),
+			10px -10px var(--salmonpink), 20px -20px 0 -3px var(--background),
+			20px -20px var(--sandybrown), 30px -30px 0 -3px var(--background),
+			30px -30px var(--tartorange), 40px -40px 0 -3px var(--background),
+			40px -40px var(--primary);
+	}
+	100% {
+		border: 3px solid var(--primary);
+		box-shadow: 10px -10px 0 -3px var(--background),
+			10px -10px var(--nadeshikopink), 20px -20px 0 -3px var(--background),
+			20px -20px var(--salmonpink), 30px -30px 0 -3px var(--background),
+			30px -30px var(--sandybrown), 40px -40px 0 -3px var(--background),
+			40px -40px var(--tartorange);
+	}
+}
