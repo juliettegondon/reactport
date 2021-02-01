@@ -16,7 +16,7 @@ function App() {
         <Nav />
         <Hero />
         <Wrapper>
-          <Route exact path="/reactport" component={About} />
+        <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/projects" component={Projects} />
