@@ -16,10 +16,10 @@ function App() {
         <Nav />
         <Hero />
         <Wrapper>
-        <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/projects" component={Projects} />
+        <Route basename={process.env.PUBLIC_URL} exact path="/" component={About} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
         </Wrapper>
         <Footer />
       </div>
